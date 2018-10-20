@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <title>VAS | gallery</title>
+      <style>
+          marquee{
+              padding-top: 0.5rem; 
+          }
+          iframe {
+              border: 3px solid;
+          }
+                     
+          .slider {
+              margin-bottom: 20px;
+          }
+          .card {
+              border: 3px solid;
+          }
+          .parallax-container {
+              height: 300px;
+          }
+          .section-follow .fa-4x {
+              margin: 5px 10px;
+          }
+                    
+          .imagePreview {
+              width: 100%;
+              height: 280px;
+              background-position: center center;
+            background:url(http://cliquecities.com/assets/no-image-e3699ae23f866f6cbdf8ba2443ee5c4e.jpg);
+            background-color:#fff;
+              background-size: cover;
+            background-repeat:no-repeat;
+              display: inline-block;
+            box-shadow:0px -3px 6px 2px rgba(0,0,0,0.2);
+          }
+          .btn-primary
+          {
+            display:block;
+            border-radius:0px;
+            box-shadow:0px 4px 6px 2px rgba(0,0,0,0.2);
+            margin-top:-5px;
+          }
+          .imgUp
+          {
+            margin-bottom:15px;
+          }
+          .del
+          {
+            position:absolute;
+            top:0px;
+            right:15px;
+            width:30px;
+            height:30px;
+            text-align:center;
+            line-height:30px;
+            background-color:rgba(255,255,255,0.6);
+            cursor:pointer;
+          }
+          .imgAdd
+          {
+            width:30px;
+            height:30px;
+            border-radius:50%;
+            background-color:#4bd7ef;
+            color:#fff;
+            box-shadow:0px 0px 2px 1px rgba(0,0,0,0.2);
+            text-align:center;
+            line-height:30px;
+            margin-top:0px;
+            cursor:pointer;
+            font-size:15px;
+          }
+                    
+                              
+              </style>
+    </head>
+
+    <body>
+        <!--navbar-->
+        <div class="navbar-fixed">
+            <nav class="purple darken-3">
+                <div class="container">
+                    <div class="nav-wrapper">
+                        <a href="#" class="brand-logo">V A S</a>
+                        <a href="#" data-target="mobile-nav" class="sidenav-trigger">
+                            <i class="material-icons">menu</i>
+                        </a>
+                        <ul class="right hide-on-med-and-down">
+                            <li>
+                                <a href="index.html">HOME</a>
+                            </li>
+                            <li>
+                                    <a href="about.html">ABOUT</a>
+                                </li>
+                                <li>
+                                        <a  href="admission.html">ADMISSION</a>
+                                    </li>
+                                    <li>
+                                            <a class="active" href="gallery.html">GALLERY</a>
+                                        </li>
+                                        <li>
+                                                <a  href="contact.html">CONTACT</a>
+                                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <ul class="sidenav" id="mobile-nav">
+                <li>
+                    <a  href="index.html">HOME</a>
+                </li>
+                <li>
+                        <a href="about.html">ABOUT</a>
+                    </li>
+                    <li>
+                            <a href="admission.html">ADMISSION</a>
+                        </li>
+                        <li>
+                                <a class="active" href="gallery.html">GALLERY</a>
+                            </li>
+                            <li>
+                                    <a href="contact.html">CONTACT</a>
+                                </li>
+            </ul>
+<!-- marquee section -->
+            <marquee width="100%" behavior="scroll" bgcolor="white">  
+                    <b>V A S, Gajuwaka is one of the V A S group of Educational institutions, started in the year 1997 with the aim of imparting ‘quality’ education.</b>  
+                    </marquee>  
+                    
+    <!-- Slider -->
+    <div class="slider">
+            <ul class="slides">
+              <li>
+                <img src="http://sfsgajuwaka.com/images/slider/1.jpg"> <!-- random image -->
+                <div class="caption center-align">
+                  <h2>Gallery</h2>
+                  <h5 class="light grey-text text-lighten-4 hide-on-small-only">Here's our small slogan.</h5>
+                </div>
+              </li>
+              <!-- <li>
+                <img src="http://sfsgajuwaka.com/images/slider/2.jpg"> 
+                <div class="caption left-align">
+                  <h2>Best in Education</h2>
+                  <h5 class="light grey-text text-lighten-4 hide-on-small-only">Here's our small slogan.</h5>
+                </div>
+              </li> -->
+            </ul>
+          </div>
+    
+<!--photo gallery-->
+
+<br><div class="container">
+    <h4 class="center-align"><span class="purple-text">PHOTO</span> GALLERY</h4>
+    <div class="row">
+    <div class="col s12 m6 l4 imgUp">
+      <div class="imagePreview"></div>
+  <label class="btn btn-primary purple">
+  Upload<input type="file" class="uploadFile img" value="Upload Photo" style="width: 0px;height: 0px;overflow: hidden;">
+  </label>
+    </div>
+    <div class="col s12 m6 l4 imgUp">
+        <div class="imagePreview"></div>
+    <label class="btn btn-primary purple">
+    Upload<input type="file" class="uploadFile img" value="Upload Photo" style="width: 0px;height: 0px;overflow: hidden;">
+    </label>
+      </div>
+      <div class="col s12 m6 l4 imgUp">
+        <div class="imagePreview"></div>
+    <label class="btn btn-primary purple">
+    Upload<input type="file" class="uploadFile img" value="Upload Photo" style="width: 0px;height: 0px;overflow: hidden;">
+    </label>
+      </div>
+      <div class="col s12 m6 l4 imgUp">
+        <div class="imagePreview"></div>
+    <label class="btn btn-primary purple">
+    Upload<input type="file" class="uploadFile img" value="Upload Photo" style="width: 0px;height: 0px;overflow: hidden;">
+    </label>
+      </div>
+      <div class="col s12 m6 l4 imgUp">
+        <div class="imagePreview"></div>
+    <label class="btn btn-primary purple">
+    Upload<input type="file" class="uploadFile img" value="Upload Photo" style="width: 0px;height: 0px;overflow: hidden;">
+    </label>
+      </div>
+      <div class="col s12 m6 l4 imgUp">
+        <div class="imagePreview"></div>
+    <label class="btn btn-primary purple">
+    Upload<input type="file" class="uploadFile img" value="Upload Photo" style="width: 0px;height: 0px;overflow: hidden;">
+    </label>
+      </div>
+      <div class="col s12 m6 l4 imgUp">
+        <div class="imagePreview"></div>
+    <label class="btn btn-primary purple">
+    Upload<input type="file" class="uploadFile img" value="Upload Photo" style="width: 0px;height: 0px;overflow: hidden;">
+    </label>
+      </div>
+      <div class="col s12 m6 l4 imgUp">
+        <div class="imagePreview"></div>
+    <label class="btn btn-primary purple">
+    Upload<input type="file" class="uploadFile img" value="Upload Photo" style="width: 0px;height: 0px;overflow: hidden;">
+    </label>
+      </div>
+      <div class="col s12 m6 l4 imgUp">
+        <div class="imagePreview"></div>
+    <label class="btn btn-primary purple">
+    Upload<input type="file" class="uploadFile img" value="Upload Photo" style="width: 0px;height: 0px;overflow: hidden;">
+    </label>
+      </div><!-- col-2 -->
+    <i class="fa fa-plus purple imgAdd"></i>
+   </div><!-- row -->
+  </div><!-- container -->
+
+
+
+<!--footer-->
+
+<footer class="section purple darken-4 white-text center">
+    <p class="flow-text">V A S  &copy; 2018</p>
+</footer>
+    
+
+
+
+
+
+
+<!-- Compiled and minified jquery -->
+
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+<!--JavaScript at end of body for optimized loading-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+      <script>
+          const sideNav = document.querySelector('.sidenav');
+          M.Sidenav.init(sideNav, {});
+
+          $(document).ready(function(){
+            $('.slider').slider({indicators: false, transition: 500, height: 500, interval: 6000 });
+          });
+          
+          $(document).ready(function(){
+              $('.scrollspy').scrollSpy();
+          });
+
+          $(document).ready(function(){
+                $('.parallax').parallax();
+          });
+          
+          $(document).ready(function(){
+          // TABS
+             $('ul.tabs').tabs();
+          });
+
+          $(document).ready(function(){
+            $('.datepicker').datepicker();
+          });
+
+                    $(".imgAdd").click(function(){
+            $(this).closest(".row").find('.imgAdd').before('<div class="col-sm-2 imgUp"><div class="imagePreview"></div><label class="btn btn-primary">Upload<input type="file" class="uploadFile img" value="Upload Photo" style="width:0px;height:0px;overflow:hidden;"></label><i class="fa fa-times del"></i></div>');
+          });
+          $(document).on("click", "i.del" , function() {
+          	$(this).parent().remove();
+          });
+          $(function() {
+              $(document).on("change",".uploadFile", function()
+              {
+              		var uploadFile = $(this);
+                  var files = !!this.files ? this.files : [];
+                  if (!files.length || !window.FileReader) return; // no file selected, or no FileReader support
+              
+                  if (/^image/.test( files[0].type)){ // only image file
+                      var reader = new FileReader(); // instance of the FileReader
+                      reader.readAsDataURL(files[0]); // read the local file
+                  
+                      reader.onloadend = function(){ // set image data as background of div
+                          //alert(uploadFile.closest(".upimage").find('.imagePreview').length);
+          uploadFile.closest(".imgUp").find('.imagePreview').css("background-image", "url("+this.result+")");
+                      }
+                  }
+              
+              });
+          });
+          
+      </script>
+
+    </body>
+  </html>
+        
